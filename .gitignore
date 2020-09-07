@@ -1,0 +1,9 @@
+*.Rout
+*.csv
+*.*~
+*~
+*.xls
+*.xlsx
+fivethirtyeight/
+fivethirtyeight
+nogit
