@@ -4,6 +4,5 @@
 *~
 *.xls
 *.xlsx
-fivethirtyeight/
-fivethirtyeight
-nogit
+fivethirtyeight/*
+

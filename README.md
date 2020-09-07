@@ -37,3 +37,5 @@ Access to the FiveThirtyEight data:
   [https://projects.fivethirtyeight.com/2020-election-forecast/](https://projects.fivethirtyeight.com/2020-election-forecast/),
   look for "Download the data: Polls Model outputs" and click "Model
   outputs"
+
+- Unzip these data into the "fivethirtyeight" subdirectory of the project directory 
