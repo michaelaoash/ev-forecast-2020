@@ -1,7 +1,8 @@
 png(file="plots/fivethirtyeight-biden-win-%d.png", width=1024, height=768)
 library(tidyverse)
 
-p  <- read_csv("fivethirtyeight/presidential_ev_probabilities_2020.csv")
+p  <- read_csv("https://projects.fivethirtyeight.com/2020-general-data/presidential_ev_probabilities_2020.csv")
+## p  <- read_csv("fivethirtyeight/presidential_ev_probabilities_2020.csv")
 options(width=200)
 
 p  <- p %>% arrange(total_ev) %>%

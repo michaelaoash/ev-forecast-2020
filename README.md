@@ -47,9 +47,11 @@ The R code
 
 Access to the FiveThirtyEight data
 
-- At the bottom of
+- R script attempts to read the data from
+  [https://projects.fivethirtyeight.com/2020-general-data/presidential_ev_probabilities_2020.csv](https://projects.fivethirtyeight.com/2020-general-data/presidential_ev_probabilities_2020.csv)
+
+- If that fails, at the bottom of
   [https://projects.fivethirtyeight.com/2020-election-forecast/](https://projects.fivethirtyeight.com/2020-election-forecast/),
   look for "Download the data: Polls Model outputs" and click "Model
-  outputs"
-
-- Unzip these data into the "fivethirtyeight" subdirectory of the project directory 
+  outputs" and unzip the data into the "fivethirtyeight" subdirectory
+  of the project directory
