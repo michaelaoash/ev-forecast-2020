@@ -19,7 +19,7 @@ Using the upside-down cumulative distribution function
 
 - For a given number of Biden electoral votes, the plotted function
   reports the probability (the share of simulations) in which Biden's
-  electoral vote total exceeded the given number.
+  electoral vote total equaled or exceeded the given number.
 
 - For example, as of 09/07/2020, Biden has an essentially 100% chance
   of getting at least 150 electoral votes, a 71% probability of
@@ -37,11 +37,11 @@ The R code
   0 to 538 electoral votes for Trump), which is one less the
   cumulative distribution function for votes for Biden.
 
-- estimates the probability of Biden's votes exceeding 270, the victory
-  threshold
+- estimates the probability of Biden's electoral votes equaling or
+  exceeding 270, the victory threshold
 
-- plots the probability of Biden exceeding the given number of
-  electoral votes for each outcome from 0 to 538
+- plots the probability of Biden equaling or exceeding the given
+  number of electoral votes for each outcome from 0 to 538
 
 - annotates the plot with the 270 probability and several guide lines
 
