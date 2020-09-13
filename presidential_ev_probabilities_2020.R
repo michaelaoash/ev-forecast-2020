@@ -26,7 +26,9 @@ ggplot(p, aes(x=total_ev, y=1-evcumprob_chal)) +
     geom_vline(xintercept=270, color="gray") +
     geom_segment(x=-Inf,y=probwin, xend=-270,yend=probwin, color="gray") +
     geom_step(color="blue",size=2) +
-    labs(y="Percent of simulations in which Biden equals or exceeds the given number of votes", x="Electoral votes for Biden") +
+    labs(title=myTitle,
+        y="Percent of simulations in which Biden equals or exceeds the given number of votes",
+         x="Electoral votes for Biden") +
     scale_x_reverse(breaks=c(100,200,270,300,400,500,538))   +
     scale_y_continuous(labels=scales::percent_format()) +
     annotate(geom="text", x=570, y=probwin, label=paste("Biden equals or exceeds 270 electoral votes in", scales::percent(probwin,accuracy=0.1), "of simulations" ), hjust=0, vjust="bottom")
@@ -43,3 +45,4 @@ ggplot(p, aes(x=total_ev, y=1-evcumprob_chal)) +
     scale_y_continuous(labels=scales::percent_format()) +
     annotate(geom="text", x=0, y=probwin, label=paste("Biden equals or exceeds 270 electoral votes in", scales::percent(probwin,accuracy=0.1), "of simulations" ), hjust=0, vjust="bottom")
 
+ggplot(p, aes(x=total_ev,y=evprob_chal)) + geom_bar(stat="identity",width=1)
