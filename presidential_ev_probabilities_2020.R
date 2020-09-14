@@ -45,4 +45,6 @@ ggplot(p, aes(x=total_ev, y=1-evcumprob_chal)) +
     scale_y_continuous(labels=scales::percent_format()) +
     annotate(geom="text", x=0, y=probwin, label=paste("Biden equals or exceeds 270 electoral votes in", scales::percent(probwin,accuracy=0.1), "of simulations" ), hjust=0, vjust="bottom")
 
-ggplot(p, aes(x=total_ev,y=evprob_chal)) + geom_bar(stat="identity",width=1)
+ggplot(p, aes(x=total_ev,y=evprob_chal)) +
+    geom_vline(xintercept=270, color="light blue") +
+    geom_bar(stat="identity",width=1) 
